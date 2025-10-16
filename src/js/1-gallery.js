@@ -1,8 +1,6 @@
 console.log('Gallery');
 
-// Описаний в документації
 import SimpleLightbox from 'simplelightbox';
-// Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
@@ -92,7 +90,6 @@ const makeList = images
 gallery.insertAdjacentHTML('beforeend', makeList);
 
 let galleryLightbox = new SimpleLightbox('.gallery-link', {
-  /* options */
   captions: true,
   captionsData: 'alt',
   captionDelay: 250,
